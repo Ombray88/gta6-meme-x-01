@@ -459,8 +459,7 @@ function encodePNG(width: number, height: number, rgbPixels: Uint8Array): Uint8A
 
 const pngBytes = encodePNG(WIDTH, HEIGHT, pixels);
 
-// Write meme.png to OUTPUT_DIR and gta6-meme-x-01/meme.png
+// Write meme.png to OUTPUT_DIR
 writeFileSync(join(OUTPUT_DIR, 'meme.png'), pngBytes);
-writeFileSync(join(__dirname, 'meme.png'), pngBytes);
 
 console.log('Successfully generated v2 WASTED meme.png and copied POST.json.');
